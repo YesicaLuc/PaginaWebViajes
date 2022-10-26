@@ -1,16 +1,22 @@
 body {
-	
-	padding-left: 20px;
-	padding-right: 20px;
-	
+	padding: 0;
+	margin: 0;
   background: #1C2D69;
 	color: #fff;
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	min-height: 100vh;
 
+ } 
 
+.MainForm {
+  
+padding: 20px;
+align-content: center;
 }
+
+
+
 /* header */
 
 header {
@@ -55,6 +61,7 @@ nav > .logo img{
 	display: flex;
 	align-items: center;
 	list-style: none;
+ 
   }
   
   .menu li{
@@ -137,12 +144,10 @@ nav > .logo img{
 .label {
 	display: block;
 	padding: 10px;
-
+   
 }
 
-
 .NombreApellido {
-	
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
