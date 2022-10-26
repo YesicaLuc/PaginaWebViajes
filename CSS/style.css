@@ -30,46 +30,89 @@ header {
     position: relative;
 }
 
-a, a:hover{
-  text-decoration: none;
-}
-
-nav{
+.navbar{
+  background-color: #D1F366;
+  color: #1C2D69;
   display: flex;
   align-items: center;
+  font-size: 15px;
   justify-content: space-between;
   padding: 5px 20px;
-  background: #D1F366;
-  
 }
 
-nav a{
+.primary-icon {
+  height: 40px;
+  border-radius: 50px;
+}
+.nav-list{
+  list-style-type: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 20px 30px;
+}
+
+.navbar a{
   color: #1C1F37;
+  text-decoration: none;
+  padding: 0px 30px;
 }
 
-nav a:hover{
-  color: #1C2D69;
-  text-decoration: underline;
+.navbar a:hover{
+ color: #1C2D69;
+ text-decoration: underline;
 }
 
-nav > .logo img{
-  flex: 1;
-  width: 4rem;
-  margin-right: 10px;
-  align-items: left;
-  border-radius: 2rem;
+.menu {
+  display: none;
 }
 
-.menu{
-  display: flex;
-  align-items: center;
-  list-style: none;
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: #1C1F37;
+  margin-bottom: 4px;
 }
 
-.menu li{
-  padding: 15px 10px;
-  font-size: 16px;
-  margin: 0.1rem  5rem;
+@media all and (max-width: 480px) {
+  .navbar{
+    flex-direction: column;
+    position: relative;
+  }
+
+  .navbar .container-icon {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+
+  .nav-list .list-item {
+    display: block;
+    border-top: 1px solid white;
+  }
+
+  .primary-icon {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .active {
+    display: block;
+  }
 }
 
 header .textos-header {
@@ -85,11 +128,6 @@ header .textos-header {
     font-size: 30px;
     font-weight: 300;
     color: #1C2D69 ;
-}
-
-nav > ul {
-    display: flex;
-    justify-content: right;
 }
 
 .wave {

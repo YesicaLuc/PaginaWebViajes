@@ -11,15 +11,22 @@
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">
-        <img src="./Imagenes/Icono Bitravel (5).png" alt="logo"> 
+    <nav class="navbar">
+      <div>
+        <a href="#"> <img class="primary-icon" src="./Imagenes/Icono Bitravel (5).png" alt=""></a>
       </div>
-      <ul class="menu">
-        <li><a href="#">Quienes Somos</a></li>
-        <li><a href="#">Iniciar Sesión</a></li>
-        <li><a href="#">Registrarse</a></li>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item">
+          <a href="#">Quienes somos</a>
+          <a href="#">Iniciar Sesión</a>
+          <a href="#">Registrarse</a>
+        </li>
       </ul>
+      <div class="menu" id="toggleButton">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
     </nav>
     <section class="textos-header">
       <h1>Bienvenido a Bitravel, el viaje que tanto soñas al alcance de un click.</h1>
@@ -37,7 +44,7 @@
               <ul class="cards"> 
                 <!-- Las cards tienen animación cuando hover -->
                 <li>
-                  <a href="./detallebariloche.html" class="card">
+                  <a href="./page2.html" class="card">
                     <img src="./Imagenes/bariloche.jpg" class="card__image" alt="Bariloche" />
                     <div class="card__overlay">
                       <div class="card__header">                  
@@ -144,6 +151,7 @@
     </div>
 </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js">
+    </script>
 </body>
 </html>
