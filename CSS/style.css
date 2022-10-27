@@ -30,6 +30,8 @@ header {
     position: relative;
 }
 
+/*Navbar*/
+
 .navbar{
   background-color: #D1F366;
   color: #1C2D69;
@@ -166,6 +168,7 @@ header .textos-header {
     text-decoration-line: underline;
 }
 
+/*Cards Lugares*/
 
 .cards {
   display: grid;
@@ -259,8 +262,7 @@ header .textos-header {
   overflow: hidden;
 }    
 
-
-
+/*Footer*/
 
 footer{
     position: bottom;
