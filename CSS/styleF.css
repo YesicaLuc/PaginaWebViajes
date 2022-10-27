@@ -1,0 +1,267 @@
+body {
+	padding: 0;
+	margin: 0;
+  background: #1C2D69;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+
+ } 
+
+.MainForm {
+  
+padding: 20px;
+align-content: center;
+}
+
+
+
+/* header */
+
+header {
+    width: 100%;
+    
+    background: #636363;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(67, 33%, 51%, 0.61), hsla(0, 0%, 39%, 0.603)), url(../Imagenes/pic_header.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(67, 33%, 51%, 0.61), hsla(0, 0%, 39%, 0.603)), url(../Imagenes/pic_header.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; 
+    position: relative;
+}
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background: #D1F366;
+  
+}
+
+nav a{
+  color: #1C1F37;
+}
+
+nav a:hover{
+  color: #1C2D69;
+  text-decoration: underline;
+}
+
+nav > .logo img{
+  flex: 1;
+  width: 4rem;
+  margin-right: 10px;
+  align-items: left;
+  border-radius: 2rem;
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	list-style: none;
+ 
+  }
+  
+  .menu li{
+	padding: 15px 10px;
+	font-size: 16px;
+	margin: 0.1rem  5rem;
+  }
+
+
+
+/* formulario */
+
+#b1 {
+
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 19px;
+	align-items: center;
+	color: #141627;
+
+	width: 128px;
+	height: 62px;
+
+	background: #d1f366;
+	border-radius: 14px;
+
+}
+
+#b2 {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 19px;
+	align-items: center;
+	color: #141627;
+
+	width: 200px;
+	height: 62px;
+
+	background: #d1f366;
+	border-radius: 10px;
+
+}
+#nombre, #apellido, #provincia, #email {
+	color: #d1f366;
+	width: 250px;
+	height: 24px;
+	font-size: 18px;
+
+	background: #1C1F37;
+	border-radius: 10px;
+}
+
+#fecha {
+	color: #d1f366;
+	font-size: 18px;
+	height: 24px;
+
+
+	background: #1C1F37;
+	border-radius: 10px;
+}
+
+#comentario {
+	color: #d1f366;
+	
+	font-size: 18px;
+
+	background: #1C1F37;
+	border-radius: 10px;
+}
+
+.chkbx {
+	color: #d1f366;
+}
+
+.label {
+	display: block;
+	padding: 10px;
+   
+}
+
+.NombreApellido {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+.ProvinciaEmail {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+/*  media */
+
+
+@media screen and (max-width: 600px) {
+
+.NombreApellido {
+	grid-template-columns: 1fr;
+}
+.ProvinciaEmail {
+	grid-template-columns: 1fr;
+}
+}
+
+
+/* footer */
+
+
+footer{
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1C1F37;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #D1F366;
+}
+
+.footer-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  }
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #D1F366;
+}
+
+.footer-bottom{
+    background: #5F647E;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-bottom p{
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#D1F366;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
