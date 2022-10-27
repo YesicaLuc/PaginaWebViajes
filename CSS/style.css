@@ -146,6 +146,7 @@ header .textos-header {
 
 .textos-contenedor {
   display: flex;
+  justify-content: space-between;
 }
 
 .textos-contenedor > h3{
@@ -166,6 +167,7 @@ header .textos-header {
 
 .textos-contenedor > h6:hover {
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 /*Cards Lugares*/

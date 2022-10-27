@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;500&family=Roboto:ital,wght@0,100;0,300;0,500;1,900&display=swap');
+
 body {
 	padding: 0;
 	margin: 0;
@@ -20,57 +22,98 @@ align-content: center;
 /* header */
 
 header {
-    width: 100%;
-    
-    background: #636363;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(67, 33%, 51%, 0.61), hsla(0, 0%, 39%, 0.603)), url(../Imagenes/pic_header.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(67, 33%, 51%, 0.61), hsla(0, 0%, 39%, 0.603)), url(../Imagenes/pic_header.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-attachment: fixed; 
-    position: relative;
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-attachment: fixed; 
+  position: relative;
 }
 
-
-nav{
+/*Navbar*/
+.navbar{
+  background-color: #D1F366;
+  color: #1C2D69;
   display: flex;
   align-items: center;
+  font-size: 15px;
   justify-content: space-between;
-  padding: 5px 20px;
-  background: #D1F366;
-  
+  padding: 0px 20px;
 }
 
-nav a{
+.primary-icon {
+  height: 40px;
+  border-radius: 50px;
+}
+.nav-list{
+  list-style-type: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.navbar a{
   color: #1C1F37;
+  text-decoration: none;
+  padding: 0px 30px;
 }
 
-nav a:hover{
-  color: #1C2D69;
-  text-decoration: underline;
+.navbar a:hover{
+ color: #1C2D69;
+ text-decoration: underline;
 }
 
-nav > .logo img{
-  flex: 1;
-  width: 4rem;
-  margin-right: 10px;
-  align-items: left;
-  border-radius: 2rem;
+.menu {
+  display: none;
 }
 
-.menu{
-	display: flex;
-	align-items: center;
-	list-style: none;
- 
-  }
-  
-  .menu li{
-	padding: 15px 10px;
-	font-size: 16px;
-	margin: 0.1rem  5rem;
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: #1C1F37;
+  margin-bottom: 4px;
+}
+
+@media all and (max-width: 480px) {
+  .navbar{
+    flex-direction: column;
+    position: relative;
   }
 
+  .navbar .container-icon {
+    width: 100%;
+  }
 
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+
+  .nav-list .list-item {
+    display: block;
+    border-top: 1px solid white;
+  }
+
+  .primary-icon {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .active {
+    display: block;
+  }
+}
 
 /* formulario */
 

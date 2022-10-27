@@ -112,15 +112,6 @@ header {
   }
 }
 
-header .textos-header {
-    display: flex;
-    height: 450px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .textos-contenedor {
   display: flex;
 }
